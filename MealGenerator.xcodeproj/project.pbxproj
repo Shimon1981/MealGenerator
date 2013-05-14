@@ -22,6 +22,7 @@
 		2E0388D31742998500229AF8 /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388D21742998500229AF8 /* FoodItem.m */; };
 		2E0388D6174299B400229AF8 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388D5174299B400229AF8 /* Meal.m */; };
 		2E0388D917429A7900229AF8 /* MealFoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388D817429A7900229AF8 /* MealFoodItem.m */; };
+		2E0388DB17429AD000229AF8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0388DA17429ACF00229AF8 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		2E0388D5174299B400229AF8 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
 		2E0388D717429A7900229AF8 /* MealFoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealFoodItem.h; sourceTree = "<group>"; };
 		2E0388D817429A7900229AF8 /* MealFoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealFoodItem.m; sourceTree = "<group>"; };
+		2E0388DA17429ACF00229AF8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0388DB17429AD000229AF8 /* CoreData.framework in Frameworks */,
 				2E0388A81742921100229AF8 /* UIKit.framework in Frameworks */,
 				2E0388AA1742921100229AF8 /* Foundation.framework in Frameworks */,
 				2E0388AC1742921100229AF8 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +70,7 @@
 		2E03889B1742921100229AF8 = {
 			isa = PBXGroup;
 			children = (
+				2E0388DA17429ACF00229AF8 /* CoreData.framework */,
 				2E0388AD1742921100229AF8 /* MealGenerator */,
 				2E0388A61742921100229AF8 /* Frameworks */,
 				2E0388A51742921100229AF8 /* Products */,
