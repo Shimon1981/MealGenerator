@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Database" syncable="YES">
+    <entity name="Database" representedClassName="Database" syncable="YES">
         <relationship name="foodItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FoodItem" syncable="YES"/>
         <relationship name="meals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meal" syncable="YES"/>
     </entity>
-    <entity name="FoodItem" syncable="YES">
+    <entity name="FoodItem" representedClassName="FoodItem" syncable="YES">
         <attribute name="calories" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="carbs" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="fat" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -12,12 +12,12 @@
         <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="protein" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
-    <entity name="Meal" syncable="YES">
+    <entity name="Meal" representedClassName="Meal" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
         <relationship name="foodItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MealFoodItem" syncable="YES"/>
     </entity>
-    <entity name="MealFoodItem" parentEntity="FoodItem" syncable="YES">
+    <entity name="MealFoodItem" representedClassName="MealFoodItem" parentEntity="FoodItem" syncable="YES">
         <attribute name="grams" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
