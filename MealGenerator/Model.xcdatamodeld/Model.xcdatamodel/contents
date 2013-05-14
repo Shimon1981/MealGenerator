@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="FoodItem" representedClassName="FoodItem" syncable="YES">
+        <attribute name="calories" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="carbsGrams" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fatGrams" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="proteinGrams" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Meal" representedClassName="Meal" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="foodItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MealFoodItem" syncable="YES"/>
+    </entity>
+    <entity name="MealFoodItem" representedClassName="MealFoodItem" syncable="YES">
+        <attribute name="grams" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="foodItem" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="FoodItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FoodItem" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="MealFoodItem" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Meal" positionX="160" positionY="192" width="128" height="90"/>
+    </elements>
+</model>
