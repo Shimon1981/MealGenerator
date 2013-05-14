@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Database" representedClassName="Database" syncable="YES">
-        <relationship name="foodItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FoodItem" syncable="YES"/>
-        <relationship name="meals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meal" syncable="YES"/>
+        <relationship name="foodItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FoodItem" inverseName="database" inverseEntity="FoodItem" syncable="YES"/>
+        <relationship name="meals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meal" inverseName="database" inverseEntity="Meal" syncable="YES"/>
     </entity>
     <entity name="FoodItem" representedClassName="FoodItem" syncable="YES">
         <attribute name="calories" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -11,19 +11,22 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="protein" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="database" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Database" inverseName="foodItems" inverseEntity="Database" syncable="YES"/>
     </entity>
     <entity name="Meal" representedClassName="Meal" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
-        <relationship name="foodItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MealFoodItem" syncable="YES"/>
+        <relationship name="database" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Database" inverseName="meals" inverseEntity="Database" syncable="YES"/>
+        <relationship name="mealFoodItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MealFoodItem" inverseName="meal" inverseEntity="MealFoodItem" syncable="YES"/>
     </entity>
     <entity name="MealFoodItem" representedClassName="MealFoodItem" parentEntity="FoodItem" syncable="YES">
         <attribute name="grams" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="meal" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Meal" inverseName="mealFoodItems" inverseEntity="Meal" syncable="YES"/>
     </entity>
     <elements>
-        <element name="FoodItem" positionX="160" positionY="192" width="128" height="135"/>
-        <element name="MealFoodItem" positionX="160" positionY="192" width="128" height="60"/>
-        <element name="Meal" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="FoodItem" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="MealFoodItem" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Meal" positionX="160" positionY="192" width="128" height="103"/>
         <element name="Database" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>
