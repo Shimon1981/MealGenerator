@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E0388A81742921100229AF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0388A71742921100229AF8 /* UIKit.framework */; };
+		2E0388AA1742921100229AF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0388A91742921100229AF8 /* Foundation.framework */; };
+		2E0388AC1742921100229AF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0388AB1742921100229AF8 /* CoreGraphics.framework */; };
+		2E0388B21742921100229AF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E0388B01742921100229AF8 /* InfoPlist.strings */; };
+		2E0388B41742921100229AF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388B31742921100229AF8 /* main.m */; };
+		2E0388B81742921100229AF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388B71742921100229AF8 /* AppDelegate.m */; };
+		2E0388BA1742921100229AF8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0388B91742921100229AF8 /* Default.png */; };
+		2E0388BC1742921100229AF8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0388BB1742921100229AF8 /* Default@2x.png */; };
+		2E0388BE1742921100229AF8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0388BD1742921100229AF8 /* Default-568h@2x.png */; };
+		2E0388C11742921100229AF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388C01742921100229AF8 /* ViewController.m */; };
+		2E0388C41742921100229AF8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0388C21742921100229AF8 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E0388A41742921100229AF8 /* MealGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E0388A71742921100229AF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2E0388A91742921100229AF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2E0388AB1742921100229AF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E0388AF1742921100229AF8 /* MealGenerator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MealGenerator-Info.plist"; sourceTree = "<group>"; };
+		2E0388B11742921100229AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2E0388B31742921100229AF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E0388B51742921100229AF8 /* MealGenerator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MealGenerator-Prefix.pch"; sourceTree = "<group>"; };
+		2E0388B61742921100229AF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2E0388B71742921100229AF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2E0388B91742921100229AF8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2E0388BB1742921100229AF8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2E0388BD1742921100229AF8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2E0388BF1742921100229AF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2E0388C01742921100229AF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2E0388C31742921100229AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E0388A11742921100229AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0388A81742921100229AF8 /* UIKit.framework in Frameworks */,
+				2E0388AA1742921100229AF8 /* Foundation.framework in Frameworks */,
+				2E0388AC1742921100229AF8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E03889B1742921100229AF8 = {
+			isa = PBXGroup;
+			children = (
+				2E0388AD1742921100229AF8 /* MealGenerator */,
+				2E0388A61742921100229AF8 /* Frameworks */,
+				2E0388A51742921100229AF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E0388A51742921100229AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E0388A41742921100229AF8 /* MealGenerator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E0388A61742921100229AF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E0388A71742921100229AF8 /* UIKit.framework */,
+				2E0388A91742921100229AF8 /* Foundation.framework */,
+				2E0388AB1742921100229AF8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E0388AD1742921100229AF8 /* MealGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				2E0388B61742921100229AF8 /* AppDelegate.h */,
+				2E0388B71742921100229AF8 /* AppDelegate.m */,
+				2E0388BF1742921100229AF8 /* ViewController.h */,
+				2E0388C01742921100229AF8 /* ViewController.m */,
+				2E0388C21742921100229AF8 /* ViewController.xib */,
+				2E0388AE1742921100229AF8 /* Supporting Files */,
+			);
+			path = MealGenerator;
+			sourceTree = "<group>";
+		};
+		2E0388AE1742921100229AF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E0388AF1742921100229AF8 /* MealGenerator-Info.plist */,
+				2E0388B01742921100229AF8 /* InfoPlist.strings */,
+				2E0388B31742921100229AF8 /* main.m */,
+				2E0388B51742921100229AF8 /* MealGenerator-Prefix.pch */,
+				2E0388B91742921100229AF8 /* Default.png */,
+				2E0388BB1742921100229AF8 /* Default@2x.png */,
+				2E0388BD1742921100229AF8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E0388A31742921100229AF8 /* MealGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E0388C71742921100229AF8 /* Build configuration list for PBXNativeTarget "MealGenerator" */;
+			buildPhases = (
+				2E0388A01742921100229AF8 /* Sources */,
+				2E0388A11742921100229AF8 /* Frameworks */,
+				2E0388A21742921100229AF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MealGenerator;
+			productName = MealGenerator;
+			productReference = 2E0388A41742921100229AF8 /* MealGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E03889C1742921100229AF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Shimon Shvartsbroit";
+			};
+			buildConfigurationList = 2E03889F1742921100229AF8 /* Build configuration list for PBXProject "MealGenerator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2E03889B1742921100229AF8;
+			productRefGroup = 2E0388A51742921100229AF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E0388A31742921100229AF8 /* MealGenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E0388A21742921100229AF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0388B21742921100229AF8 /* InfoPlist.strings in Resources */,
+				2E0388BA1742921100229AF8 /* Default.png in Resources */,
+				2E0388BC1742921100229AF8 /* Default@2x.png in Resources */,
+				2E0388BE1742921100229AF8 /* Default-568h@2x.png in Resources */,
+				2E0388C41742921100229AF8 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E0388A01742921100229AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0388B41742921100229AF8 /* main.m in Sources */,
+				2E0388B81742921100229AF8 /* AppDelegate.m in Sources */,
+				2E0388C11742921100229AF8 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E0388B01742921100229AF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E0388B11742921100229AF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2E0388C21742921100229AF8 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E0388C31742921100229AF8 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E0388C51742921100229AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2E0388C61742921100229AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E0388C81742921100229AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MealGenerator/MealGenerator-Prefix.pch";
+				INFOPLIST_FILE = "MealGenerator/MealGenerator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2E0388C91742921100229AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MealGenerator/MealGenerator-Prefix.pch";
+				INFOPLIST_FILE = "MealGenerator/MealGenerator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E03889F1742921100229AF8 /* Build configuration list for PBXProject "MealGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E0388C51742921100229AF8 /* Debug */,
+				2E0388C61742921100229AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E0388C71742921100229AF8 /* Build configuration list for PBXNativeTarget "MealGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E0388C81742921100229AF8 /* Debug */,
+				2E0388C91742921100229AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E03889C1742921100229AF8 /* Project object */;
+}
