@@ -18,11 +18,9 @@
 		2E0388BE1742921100229AF8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0388BD1742921100229AF8 /* Default-568h@2x.png */; };
 		2E0388C11742921100229AF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388C01742921100229AF8 /* ViewController.m */; };
 		2E0388C41742921100229AF8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0388C21742921100229AF8 /* ViewController.xib */; };
-		2E0388CC1742973900229AF8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388CA1742973900229AF8 /* Model.xcdatamodeld */; };
-		2E0388D31742998500229AF8 /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388D21742998500229AF8 /* FoodItem.m */; };
-		2E0388D6174299B400229AF8 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388D5174299B400229AF8 /* Meal.m */; };
-		2E0388D917429A7900229AF8 /* MealFoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388D817429A7900229AF8 /* MealFoodItem.m */; };
 		2E0388DB17429AD000229AF8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0388DA17429ACF00229AF8 /* CoreData.framework */; };
+		2E0388DE1742B2C500229AF8 /* FoodsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0388DD1742B2C500229AF8 /* FoodsManager.m */; };
+		2E0389251742BE1000229AF8 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E0389231742BE1000229AF8 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,14 +40,10 @@
 		2E0388BF1742921100229AF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2E0388C01742921100229AF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2E0388C31742921100229AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		2E0388CB1742973900229AF8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		2E0388D11742998500229AF8 /* FoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItem.h; sourceTree = "<group>"; };
-		2E0388D21742998500229AF8 /* FoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItem.m; sourceTree = "<group>"; };
-		2E0388D4174299B400229AF8 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
-		2E0388D5174299B400229AF8 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
-		2E0388D717429A7900229AF8 /* MealFoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealFoodItem.h; sourceTree = "<group>"; };
-		2E0388D817429A7900229AF8 /* MealFoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealFoodItem.m; sourceTree = "<group>"; };
 		2E0388DA17429ACF00229AF8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2E0388DC1742B2C500229AF8 /* FoodsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodsManager.h; sourceTree = "<group>"; };
+		2E0388DD1742B2C500229AF8 /* FoodsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodsManager.m; sourceTree = "<group>"; };
+		2E0389241742BE1000229AF8 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +99,6 @@
 				2E0388C01742921100229AF8 /* ViewController.m */,
 				2E0388C21742921100229AF8 /* ViewController.xib */,
 				2E0388AE1742921100229AF8 /* Supporting Files */,
-				2E0388CA1742973900229AF8 /* Model.xcdatamodeld */,
 			);
 			path = MealGenerator;
 			sourceTree = "<group>";
@@ -127,12 +120,9 @@
 		2E0388D01742998500229AF8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2E0388D717429A7900229AF8 /* MealFoodItem.h */,
-				2E0388D817429A7900229AF8 /* MealFoodItem.m */,
-				2E0388D4174299B400229AF8 /* Meal.h */,
-				2E0388D5174299B400229AF8 /* Meal.m */,
-				2E0388D11742998500229AF8 /* FoodItem.h */,
-				2E0388D21742998500229AF8 /* FoodItem.m */,
+				2E0388DC1742B2C500229AF8 /* FoodsManager.h */,
+				2E0388DD1742B2C500229AF8 /* FoodsManager.m */,
+				2E0389231742BE1000229AF8 /* DataModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,10 +196,8 @@
 				2E0388B41742921100229AF8 /* main.m in Sources */,
 				2E0388B81742921100229AF8 /* AppDelegate.m in Sources */,
 				2E0388C11742921100229AF8 /* ViewController.m in Sources */,
-				2E0388CC1742973900229AF8 /* Model.xcdatamodeld in Sources */,
-				2E0388D31742998500229AF8 /* FoodItem.m in Sources */,
-				2E0388D6174299B400229AF8 /* Meal.m in Sources */,
-				2E0388D917429A7900229AF8 /* MealFoodItem.m in Sources */,
+				2E0388DE1742B2C500229AF8 /* FoodsManager.m in Sources */,
+				2E0389251742BE1000229AF8 /* DataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,13 +324,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2E0388CA1742973900229AF8 /* Model.xcdatamodeld */ = {
+		2E0389231742BE1000229AF8 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				2E0388CB1742973900229AF8 /* Model.xcdatamodel */,
+				2E0389241742BE1000229AF8 /* DataModel.xcdatamodel */,
 			);
-			currentVersion = 2E0388CB1742973900229AF8 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = 2E0389241742BE1000229AF8 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
